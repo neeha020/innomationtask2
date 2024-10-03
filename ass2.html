@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #e0f1ff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d6efd;
+        }
+
+        table {
+            width: 83%;
+            border-collapse: collapse;
+            margin-left: 10%;
+            margin-top: 1%;
+        }
+
+        thead {
+            background-color: #1e90ff;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .emplyoeeList li {
+            color: #007bff;
+            font-weight: 16px;
+        }
+
+        .emplyoeeList {
+            margin-top: 5%;
+        }
+
+        .emplyoeedetails {
+            margin-top: 5%;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Company Directory Portal</h1>
+        <form>
+            <h2>Employee Regestration form</h2>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="department">Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Marketing">Marketing</option>
+            </select><br><br>
+
+            <label for="employeeID">Employee ID:</label><br>
+            <input type="text" id="employeeID" name="employeeID" required><br><br>
+
+            <label for="profilePicture">Profile Picture URL:</label><br>
+            <input type="url" id="profilePicture" name="profilePicture"><br><br>
+
+            <input type="submit" value="Register Employee">
+
+        </form>
+        <section>
+            <div class="card" style="width: 83%;margin-left: 10%;">
+                <div class="emplyoeeList" style="background-color:whitesmoke;"><br>
+                    <h1>Employee List</h1>
+                    <ol id="employee-list">
+                        <li><a>Neeha - nandhu@gmail.com</a></li>
+                        <hr>
+                        <li><a>Nandhu - nandhu@gmail.com</a></li>
+                        <hr>
+                        <li><a>Harsha - Harsha@gmail.com</a></li>
+                        <hr>
+                        <li><a>siva - siva@gmail.com</a></li>
+                        <hr>
+
+                
+                    
+                    </ol>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card" style="width: 83%;margin-left: 10%;">
+                <div class="emplyoeedetails" style="background-color:whitesmoke;">
+                    <table><br>
+                        <h1>Emplyoee Details
+                        </h1>
+                        <thead>
+                            <tr>
+                                <th>Employee ID</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Profile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid black">
+                                <td>101</td>
+                                <td>Neeha</td>
+                                <td>IT</td>
+                                <td><img src="https://freerangestock.com/sample/39560/it--information-technology-network-concept.jpg" alt="" height="50px" width="50px">
+                                </td>
+                            </tr>
+
+                            <tr style="border-bottom:1px solid black">
+
+                                <td>102</td>
+                                <td>Nandu</td>
+                                <td>Testing</td>
+                                <td><img src="https://tse3.mm.bing.net/th?id=OIP.fmmAx2o6NndScaWWcPGcYQHaE8&pid=Api&P=0&h=180" alt="" height="50px" width="50px">
+                                </td>
+                            </tr>
+                        </tr>
+
+                        <tr style="border-bottom:1px solid black">
+
+                            <td>103</td>
+                            <td>Harsha</td>
+                            <td>Marketing</td>
+                            <td><img src="https://tse2.mm.bing.net/th?id=OIP.2NkFojv6LXPZuy8ITIaxVgHaEK&pid=Api&P=0&h=180" alt="" height="50px" width="50px">
+                            </td>
+                         </tr>   
+                        </tr>
+
+                        <tr style="border-bottom:1px solid black">
+
+                            <td>104</td>
+                            <td>siva</td>
+                            <td>sales</td>
+                            <td><img src="https://tse2.mm.bing.net/th?id=OIP.zsBt5SNXvLzWrPlFtfVODwHaKC&pid=Api&P=0&h=180" alt="" height="50px" width="50px">
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <br>
+            <h1>Company Location</h1><br><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1986078112004!2d78.38741457498794!3d17.49803018340817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727841606678!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+    </div>
+</body>
+
+</html>
